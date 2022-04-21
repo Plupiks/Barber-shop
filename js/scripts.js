@@ -70,16 +70,6 @@ for (let anchor of anchors) {
   });
 }
 
-// Прокрутка до першого блоку стрілкою
-const arrowScroll = document.querySelector('.hero--arrow-down');
-arrowScroll.addEventListener('click', (e) => {
-  e.preventDefault;
-  document.querySelector('#s-rental').scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  });
-});
-
 // Прокрутка до геро блока
 const headerLink = document.querySelector('.header--logo-text');
 headerLink.addEventListener('click', (e) => {

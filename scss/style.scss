@@ -126,6 +126,10 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
+a.active {
+  color: burlywood;
+}
+
 // Hero section
 .hero {
   padding-top: 108px;
@@ -338,6 +342,7 @@ body {
 
 .about--text {
   margin-bottom: 32px;
+  text-align: left;
 }
 .about--images {
   display: flex;
@@ -435,5 +440,131 @@ body {
 @media only screen and (max-width: 900px) {
   .header--navigation {
     display: none;
+  }
+
+  .header--logo-text a {
+    font-size: 22px;
+  }
+
+  .header--body {
+    padding: 15px 20px;
+  }
+
+  .experts,
+  .benefits,
+  .price,
+  .info,
+  .about,
+  .kontakt {
+    padding: 40px 0;
+  }
+
+  .hero--title {
+    font-size: 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .bi--text {
+    font-size: 16px;
+  }
+
+  .pi--subtitle {
+    font-size: 18px;
+  }
+
+  .pi--text {
+    font-size: 16px;
+  }
+
+  .pi--price-value {
+    font-size: 18px;
+  }
+
+  .info--text-number {
+    font-size: 32px;
+  }
+
+  .kontakt--bottom-block {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero--body {
+    padding-top: 70px;
+    min-height: 430px;
+  }
+
+  .benefits--item {
+    padding: 12px 20px;
+    min-height: auto;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    flex: 0 0 auto;
+  }
+
+  .benefits--title {
+    margin-bottom: 50px;
+  }
+
+  .benefits--items {
+    flex-direction: column;
+  }
+
+  .about--images {
+    flex-direction: column;
+    width: 100%;
+
+    & img {
+      max-height: 100%;
+      height: auto;
+      padding: 20px 0;
+    }
+  }
+
+  .kontakt--bottom-block {
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100%;
+  }
+
+  .kbb--left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero--body {
+    padding-top: 60px;
+    min-height: 350px;
+  }
+
+  .hero--title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero--descr {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .prise--item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pi--right {
+    text-align: left;
   }
 }
